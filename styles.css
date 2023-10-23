@@ -85,6 +85,11 @@ button {
     background-color: #cab59f;
 }
 
+footer {
+    padding-top: 0.5rem;
+    display: -webkit-flex;
+}
+
 #reset {
     position: absolute;
     bottom: 0;
