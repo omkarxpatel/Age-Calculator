@@ -104,7 +104,12 @@ button {
     font-size: 1.5rem;
 }
 
-footer {
-    padding-top: 0.5rem;
-    display: -webkit-flex;
+#credits {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
+
+#credits:hover {
+    visibility: visible;
 }
