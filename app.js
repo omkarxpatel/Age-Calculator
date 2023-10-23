@@ -45,7 +45,12 @@ $(document).ready(function(){
 
             var alt = Math.pow(10, 9)-age.ms;
 
-            $("#time-left").html((77-age.year-1) + "." + alt + " YEARS LEFT TO LIVE");
+            var percentage = (((76-age.year)+(alt/Math.pow(10,9)))/((age.year)+(age.ms/Math.pow(10,9))))*1000;
+            var p = ((((age.year)+(age.ms/Math.pow(10,9)))/77.28)*10).toFixed(2)
+            console.log(percentage, p)
+            $("#age-label").html("CURRENT AGE " + p);
+
+            $("#time-left").html((77-age.year-1) + "." + alt + " YEARS LEFT TO LIVE (" + p + "%)");
         }, 100);
     };
 
