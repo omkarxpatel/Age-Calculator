@@ -43,10 +43,9 @@ $(document).ready(function(){
             var age = getAge(dob);
             $("#age").html(age.year + "<sup>." + age.ms + "</sup>");
 
-            var yearsLeft = averageAgeUSA - age.year;
-            var monthsLeft = Math.round((yearsLeft - Math.floor(yearsLeft)) * 12);
+            var alt = Math.pow(10, 9)-age.ms;
 
-            $("#time-left").html(yearsLeft.toFixed(0) + "<sup>." + monthsLeft + "</sup>");
+            $("#time-left").html((77-age.year-1) + "." + alt + " YEARS LEFT TO LIVE");
         }, 100);
     };
 

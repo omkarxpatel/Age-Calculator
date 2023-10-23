@@ -30,14 +30,14 @@ input {
     font-family: 'Avenir', 'helvetica neue', helvetica, arial, sans-serif;
 }
 
-.age-label {
-    color: #F5EBE0;
+.age-label , .left{
+    color: #cab59f;
     font-size: 1.2rem;
     line-height: 1;
-    margin: 0 0 0 2px;
+    margin: 0 0 0 10px;
 }
 
-.count {
+.count{
     color: #DBA39A;
     margin: 0;
     font-size: 10rem;
@@ -71,7 +71,7 @@ input {
     border-width: 1px;
     border-style: solid;
     border-radius: 0.25rem;
-    border-color: #CCC;
+    border-color: #cab59f;
     background-color: #FFF;
 }
 
@@ -82,7 +82,7 @@ button {
     color: #FFF;
     border: none;
     border-radius: 0.25rem;
-    background-color: #DBA39A;
+    background-color: #cab59f;
 }
 
 #reset {
@@ -99,7 +99,7 @@ button {
     color: #FFF;
     border: none;
     border-radius: 0.25rem;
-    background-color: #F5EBE0;
+    background-color: #cab59f;
     padding: 0.375rem 0.75rem;
     font-size: 1.5rem;
 }
