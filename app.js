@@ -3,9 +3,16 @@ $(document).ready(function(){
         e.preventDefault();
     
         var input = $("#dob-input").val();
-        var dob = new Date(input);
-        save(dob);
-        renderAgeLoop();
+        console.log(typeof(input))
+        if (input == "") {
+            resetDob();
+            location.reload();
+        }
+        else {
+            var dob = new Date(input);
+            save(dob);
+            renderAgeLoop();
+        }
     });
 
     $("#reset").click(function (e) {
