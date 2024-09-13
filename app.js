@@ -72,6 +72,8 @@ $(document).ready(function(){
 
     function getAge(dob){
         var now       = new Date;
+        now.setHours(now.getHours() - 3);
+        
         var duration  = now - dob;
         var years     = duration / 31556900000;
         
