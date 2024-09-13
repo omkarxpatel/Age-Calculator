@@ -70,20 +70,22 @@ $(document).ready(function(){
         $("#choose").css("display", "block");
     };
 
-    function getAge(dob){
-        var now       = new Date;
-        now.setHours(now.getHours() - 3);
-        
-        var duration  = now - dob;
-        var years     = duration / 31556900000;
-        
+    function getAge(dob) {
+        var now = new Date();
+    
+        var pstNow = new Date(now.toLocaleString("en-US", { timeZone: "America/Los_Angeles" }));
+    
+        var duration = pstNow - dob;
+        var years = duration / 31556900000;
+    
         var majorMinor = years.toFixed(9).toString().split('.');
-        
+    
         return {
             "year": majorMinor[0],
             "ms": majorMinor[1]
         };
-    };
+    }
+
 
     function main() {
         if (load() != -1)
