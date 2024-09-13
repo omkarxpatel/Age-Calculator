@@ -86,7 +86,6 @@ $(document).ready(function(){
         };
     }
 
-
     function main() {
         if (load() != -1)
         {
